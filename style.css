@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.beginning-text {
+    text-align: center;
+    font-family: 'Quicksand';
+    
+}
+header {
+    background-color: #6A1E2D;
+    color: #FAF9F6;
+}
+
+nav {
+    background-color: #1A1A1A;
+    padding: 5px;
+    width: 100%;
+    min-height: 70px;
+}
+
+nav a  {
+    text-decoration: none;
+    font-family: 'Playfair Display', sans-serif;
+    padding: 10px 20px;
+    background-color: #704646;
+    color: #E8C9C9;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: block;
+    cursor: pointer;
+}
+
+nav li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a:hover {
+    color: #FAF9F6;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+nav a:active {
+    background-color: #F2E9E4;
+    transform: scale(0.95);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+main .greetings h2  {
+    color: #800000;
+    text-align: center;
+    font-family: 'Lora';
+}
+
+main {
+    background-color: #FFFDF9;
+}
+
+main .greetings p {
+    color: #222222;
+    text-align: center;
+    font-family: 'Lora';
+}
+
+.profile-icon {
+    width: 130px;
+    display: block;
+    margin: 0 auto ;
+    border-radius: 100px;
+    padding-top: 7px;
+}
+
+.abt {
+    text-align: center;
+    padding-bottom: 7px;
+    font-family: 'Lora';
+}
+
+.social {
+    background-color: #f7eded;
+    margin-top: 50px;
+}
+
+.abt h2 {
+    color: #4C1F24;
+    font-family: 'Quicksand';
+    font-size: 30px;
+}
+
+.social-list {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.social-media i {
+    color: #6A0F1E;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.social-media i:hover {
+    color: #A67C8E;
+    transform: scale(1.1);
+}
+
+.social-media h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Playfair Display';
+    color: #6A0F1E;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5px;
+    }
+
+    nav a {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        padding: 1rem;
+    }
+
+    .social-list {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+aside {
+    background-color: #EED4CF;
+    padding-bottom: 20px;
+}
+
+.stories h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lora';
+    color: #5C1A1B;
+}
+
+.story h3 {
+    font-family: 'Quicksand';
+    text-align: center;
+    font-size: 20px;
+    color: #5C1A1B;
+}
+
+.Cover {
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+    width: 180px;
+    border: 3px solid #d7c4be;
+    box-shadow: 0 10px 2px rgba(0,0,0,0.25);
+}
+
+.story p {
+    font-family: 'Playfair Display';
+    padding: 10px;
+    font-size: 20px;
+    color: #442828;
+}
+
+.story .sinopsis  {
+    text-align: center;
+    color: #2A2A2A;
+}
+
+.RM {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.RM i {
+    color: #5B0F0F;
+    transition: 0.3s;
+}
+
+.RM i:hover {
+    color: #8A3E44;
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #ac7b7e;
+    padding: 30px 20px;
+    text-align: center;
+    color: #f4eded;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+footer .quote {
+    margin-top: 10px;
+    color: #f0e5e5;
+}
+
+.divider {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+  color: #4A1F1F; 
+  font-size: 22px;
+  font-family: "Cinzel", serif;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #BFA5A0; 
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.story p,
+main .greetings p {
+    line-height: 1.6;
+}
